@@ -67,3 +67,4 @@ override_dh_install:
 	rm ${DESTDIR}/usr/share/doc/fence-agents-pve/COPYING.libraries
 	rm ${DESTDIR}/usr/share/doc/fence-agents-pve/README.licence
 	rm ${DESTDIR}/usr/share/doc/fence-agents-pve/COPYRIGHT
+
