@@ -1,0 +1,12 @@
+Source: fence-agents-pve
+Section: admin
+Priority: optional
+Maintainer: Proxmox Support Team <support@proxmox.com>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev
+Standards-Version: 3.8.4
+
+Package: fence-agents-pve
+Architecture: any
+Depends: ${perl:Depends}, ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Description: fence agents for redhat cluster suite
+ This package provides various fence agents.

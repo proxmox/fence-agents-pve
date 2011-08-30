@@ -1,0 +1,51 @@
+This work was packaged for Debian by:
+
+    Proxmox Support Team <support@proxmox.com> on Mon, 29 Aug 2011 13:49:31 +0200
+
+It was downloaded from:
+
+    <https://fedorahosted.org/cluster/wiki/HomePage>
+
+Upstream Author(s):
+
+    See Copyright section below. 
+ 
+License:
+
+    Libraries:
+
+    You can redistribute them and/or modify them under the terms of
+    the GNU Lesser General Public License as published by the Free
+    Software Foundation; either version 2.1 of the License, or (at
+    your option) any later version.
+
+    The libraries are distributed in the hope that they will be
+    useful, but WITHOUT ANY WARRANTY; without even the implied
+    warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    See the GNU Lesser General Public License for more details.
+
+    Applications:
+
+    You can redistribute them and/or modify them under the terms of
+    the GNU General Public License as published by the Free Software
+    Foundation; either version 2 of the License, or (at your option)
+    any later version.
+
+    The applications are distributed in the hope that they will be
+    useful, but WITHOUT ANY WARRANTY; without even the implied
+    warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    See the GNU General Public License for more details.
+
+    A copy of each license is included for your convenience in:
+    /usr/share/common-licenses/LGPL-2.1	
+    /usr/share/common-licenses/GPL-2	
+    
+
+The Debian packaging is:
+
+    Copyright (C) 2011 Proxmox Server Solutions GmbH
+
+and is licensed under the AGPL version 3
+
+Copyright:
+

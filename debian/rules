@@ -1,0 +1,69 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+AGENTS= 	\
+alom		\
+apc		\
+apc_snmp	\
+baytech		\
+bladecenter	\
+brocade		\
+bullpap		\
+cisco_mds	\
+cisco_ucs	\
+cpint		\
+drac		\
+drac5		\
+eaton_snmp	\
+egenera		\
+eps		\
+ibmblade	\
+ifmib		\
+ilo		\
+ilo_mp		\
+intelmodular	\
+ipmilan		\
+ldom		\
+lib		\
+lpar		\
+manual		\
+mcdata		\
+node_assassin	\
+nss_wrapper	\
+rackswitch	\
+rsa		\
+rsb		\
+sanbox2		\
+scsi		\
+vixel		\
+wti		\
+xcat		\
+zvm		
+
+DESTDIR=debian/fence-agents-pve/
+
+%:
+	dh $@ 
+
+override_dh_auto_configure:
+	./configure 						\
+		--prefix=/usr 					\
+		--localstatedir=/var 				\
+		--sysconfdir=/etc				\
+		--docdir=/usr/share/doc/fence-agents-pve 	\
+		--with-agents="${AGENTS}"
+
+
+override_dh_install:
+	dh_install
+	rmdir ${DESTDIR}/var/run/cluster
+	rmdir ${DESTDIR}/var/run
+	rm ${DESTDIR}/usr/share/doc/fence-agents-pve/COPYING.applications	
+	rm ${DESTDIR}/usr/share/doc/fence-agents-pve/COPYING.libraries
+	rm ${DESTDIR}/usr/share/doc/fence-agents-pve/README.licence
+	rm ${DESTDIR}/usr/share/doc/fence-agents-pve/COPYRIGHT
