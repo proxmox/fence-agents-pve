@@ -2,7 +2,7 @@ RELEASE=2.0
 
 PACKAGE=fence-agents-pve
 PKGREL=1
-FAVER=3.1.5
+FAVER=3.1.6
 FADIR=fence-agents-${FAVER}
 FASRC=${FADIR}.tar.xz
 
