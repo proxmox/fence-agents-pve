@@ -1,3 +1,9 @@
+fence-agents-pve (3.1.6-2) unstable; urgency=low
+
+  * run ccs_update_schema in postinst
+
+ -- Proxmox Support Team <support@proxmox.com>  Fri, 09 Dec 2011 10:59:25 +0100
+
 fence-agents-pve (3.1.6-1) unstable; urgency=low
 
   * update to 3.1.6
