@@ -1,10 +1,10 @@
 RELEASE=2.0
 
 PACKAGE=fence-agents-pve
-PKGREL=1
+PKGREL=2
 FAVER=3.1.7
-FADIR=fence-agents-${FAVER}
-FASRC=${FADIR}.tar.xz
+FADIR=fence-agents-${FAVER}.11-d264
+FASRC=${FADIR}.tar.gz
 
 
 DEB=${PACKAGE}_${FAVER}-${PKGREL}_amd64.deb
@@ -19,6 +19,12 @@ ${DEB} deb: ${FASRC}
 	cd ${FADIR}; dpkg-buildpackage -rfakeroot -b -us -uc
 	lintian ${DEB}
 
+${RHCSRC} download:
+	rm -rf fence-agents.git
+	git clone git://git.fedorahosted.org/fence-agents.git fence-agents.git
+	cd fence-agents.git; ./autogen.sh; ./configure; make dist
+	mv fence-agents.git/fence-agents-*.tar.gz .
+
 .PHONY: upload
 upload: ${DEB}
 	umount /pve/${RELEASE}; mount /pve/${RELEASE} -o rw 
@@ -32,7 +38,7 @@ upload: ${DEB}
 distclean: clean
 
 clean:
-	rm -rf *~ debian/*~ *.deb ${FADIR} ${PACKAGE}_*
+	rm -rf *~ debian/*~ *.deb ${FADIR} ${PACKAGE}_* fence-agents.git
 
 .PHONY: dinstall
 dinstall: ${DEB}
