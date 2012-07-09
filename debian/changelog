@@ -1,3 +1,9 @@
+fence-agents-pve (3.1.8-1) unstable; urgency=low
+
+  * update to 3.1.8
+
+ -- Proxmox Support Team <support@proxmox.com>  Mon, 09 Jul 2012 07:54:35 +0200
+
 fence-agents-pve (3.1.7-2) unstable; urgency=low
 
   * use latest version from git (with iplilan fixes)
