@@ -1,11 +1,10 @@
-RELEASE=2.1
+RELEASE=2.2
 
 PACKAGE=fence-agents-pve
 PKGREL=1
-FAVER=3.1.8
-FADIR=fence-agents-${FAVER}.6-723b
+FAVER=3.1.9
+FADIR=fence-agents-${FAVER}.6-582aa5
 FASRC=${FADIR}.tar.gz
-
 
 DEB=${PACKAGE}_${FAVER}-${PKGREL}_amd64.deb
 
