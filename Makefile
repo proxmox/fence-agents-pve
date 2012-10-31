@@ -6,7 +6,8 @@ FAVER=3.1.9
 FADIR=fence-agents-${FAVER}.6-582aa5
 FASRC=${FADIR}.tar.gz
 
-DEB=${PACKAGE}_${FAVER}-${PKGREL}_amd64.deb
+ARCH:=$(shell dpkg-architecture -qDEB_BUILD_ARCH)
+DEB=${PACKAGE}_${FAVER}-${PKGREL}_${ARCH}.deb
 
 all: ${DEB}
 
