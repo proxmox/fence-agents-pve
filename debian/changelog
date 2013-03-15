@@ -1,3 +1,9 @@
+fence-agents-pve (4.0.0-1) unstable; urgency=low
+
+  * update to 4.0.0
+
+ -- Proxmox Support Team <support@proxmox.com>  Fri, 15 Mar 2013 08:49:00 +0100
+
 fence-agents-pve (3.1.9-1) unstable; urgency=low
 
   * update to 3.1.9

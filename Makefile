@@ -1,9 +1,9 @@
-RELEASE=2.2
+RELEASE=3.0
 
 PACKAGE=fence-agents-pve
 PKGREL=1
-FAVER=3.1.9
-FADIR=fence-agents-${FAVER}.6-582aa5
+FAVER=4.0.0
+FADIR=fence-agents-${FAVER}
 FASRC=${FADIR}.tar.gz
 
 ARCH:=$(shell dpkg-architecture -qDEB_BUILD_ARCH)
@@ -17,7 +17,7 @@ ${DEB} deb: ${FASRC}
 	cp -av debian ${FADIR}/debian
 	cat ${FADIR}/doc/COPYRIGHT >>${FADIR}/debian/copyright
 	cd ${FADIR}; dpkg-buildpackage -rfakeroot -b -us -uc
-	lintian ${DEB}
+	lintian -X copyright-file ${DEB}
 
 ${RHCSRC} download:
 	rm -rf fence-agents.git
