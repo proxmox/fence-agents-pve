@@ -48,7 +48,7 @@ zvm
 DESTDIR=debian/fence-agents-pve/
 
 %:
-	dh $@ 
+	dh --with quilt $@  
 
 override_dh_auto_configure:
 	./configure 						\

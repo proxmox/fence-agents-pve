@@ -1,0 +1,13 @@
+Index: new/fence/agents/lib/fencing_snmp.py.py
+===================================================================
+--- new.orig/fence/agents/lib/fencing_snmp.py.py	2013-03-15 08:44:49.000000000 +0100
++++ new/fence/agents/lib/fencing_snmp.py.py	2013-08-22 08:51:01.000000000 +0200
+@@ -70,7 +70,7 @@
+ 				('snmp-priv-passwd','X'),('password','A'),('username','u'))
+ 			for item in mapping_v3:
+ 				if (self.options.has_key("--"+item[0])):
+-					cmd += " -%s '%s'"% (item[1], self.quote_for_run(self.options["--" + item[1]]))
++					cmd += " -%s '%s'"% (item[1], self.quote_for_run(self.options["--" + item[0]]))
+ 
+ 		force_ipvx = ""
+ 
