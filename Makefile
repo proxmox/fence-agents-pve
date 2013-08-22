@@ -7,6 +7,8 @@ FADIR=fence-agents-${FAVER}
 FASRC=${FADIR}.tar.gz
 
 ARCH:=$(shell dpkg-architecture -qDEB_BUILD_ARCH)
+GITVERSION:=$(shell cat .git/refs/heads/master)
+
 DEB=${PACKAGE}_${FAVER}-${PKGREL}_${ARCH}.deb
 
 all: ${DEB}
@@ -16,6 +18,7 @@ ${DEB} deb: ${FASRC}
 	tar xf ${FASRC}
 	cp -av debian ${FADIR}/debian
 	cat ${FADIR}/doc/COPYRIGHT >>${FADIR}/debian/copyright
+	echo "git clone git://git.proxmox.com/git/fence-agents-pve.git\\ngit checkout ${GITVERSION}" > ${FADIR}/debian/SOURCE
 	cd ${FADIR}; dpkg-buildpackage -rfakeroot -b -us -uc
 	lintian -X copyright-file ${DEB}
 
