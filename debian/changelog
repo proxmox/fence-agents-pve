@@ -1,3 +1,21 @@
+fence-agents-pve (4.0.5-1) unstable; urgency=low
+
+  * update to 4.0.5
+  
+  * remove patch fix-rh-bug-999146-fencing-snmp-py.patch (now upstream)
+  
+  * new agent fence_hds_cb (Hitachi compute blade 2000)
+  
+  * new agent fence_hpblade (HP BladeSystem)
+  
+  * new_agent fence_ipdu (iPDU fencing agent for model 46M4002)
+  
+  * new agent fence_netio (Koukaam NETIO-230B PDU)
+  
+  * remove fence_na (no longer available)
+
+ -- Proxmox Support Team <support@proxmox.com>  Wed, 18 Dec 2013 06:16:25 +0100
+
 fence-agents-pve (4.0.0-2) unstable; urgency=low
 
   * fix https://bugzilla.redhat.com/show_bug.cgi?id=999146

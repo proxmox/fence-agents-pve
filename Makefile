@@ -1,10 +1,10 @@
 RELEASE=3.1
 
 PACKAGE=fence-agents-pve
-PKGREL=2
-FAVER=4.0.0
+PKGREL=1
+FAVER=4.0.5
 FADIR=fence-agents-${FAVER}
-FASRC=${FADIR}.tar.gz
+FASRC=${FADIR}.tar.xz
 
 ARCH:=$(shell dpkg-architecture -qDEB_BUILD_ARCH)
 GITVERSION:=$(shell cat .git/refs/heads/master)
