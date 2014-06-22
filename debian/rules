@@ -46,7 +46,8 @@ scsi		\
 vixel		\
 wti		\
 xcat		\
-zvm		
+zvm			\
+onlinenet
 
 DESTDIR=debian/fence-agents-pve/
 
