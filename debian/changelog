@@ -1,3 +1,9 @@
+fence-agents-pve (4.0.5-2) unstable; urgency=low
+
+  * new agent: fence_online
+
+ -- root <changeme@gmale.com>  Fri, 27 Jun 2014 10:55:12 +0000
+
 fence-agents-pve (4.0.5-1) unstable; urgency=low
 
   * update to 4.0.5

@@ -16,7 +16,7 @@ all: ${DEB}
 ${DEB} deb: ${FASRC}
 	rm -rf ${FADIR}
 	tar xf ${FASRC}
-	cp -av debian ${FADIR}/debian
+	rsync -av debian/ ${FADIR}/debian/
 	cat ${FADIR}/doc/COPYRIGHT >>${FADIR}/debian/copyright
 	echo "git clone git://git.proxmox.com/git/fence-agents-pve.git\\ngit checkout ${GITVERSION}" > ${FADIR}/debian/SOURCE
 	cd ${FADIR}; dpkg-buildpackage -rfakeroot -b -us -uc
