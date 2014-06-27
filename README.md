@@ -88,15 +88,15 @@ EOF
     # git clone git://github.com/soul9/fence-agents-pve.git
     # cd fence-agents-pve
     # make all
-    # cp fence-agents-pve_4.0.5-1_amd64.deb ..
+    # cp fence-agents-pve_4.0.5-2_amd64.deb ..
     # logout
     # cp wheezy-proxmox-devel/usr/src/pvebuild/*.deb /usr/src/
-    # scp /usr/src/python-requests_2.3.0-1_all.deb /usr/src/python-python-hpilo_2.6.2-1_all.deb /usr/src/python-slumber_0.6.0-1_all.deb /usr/src/fence-agents-pve_4.0.5-1_amd64.deb root@OTHERMACHINEIP:/usr/src
+    # scp /usr/src/python-requests_2.3.0-1_all.deb /usr/src/python-python-hpilo_2.6.2-1_all.deb /usr/src/python-slumber_0.6.0-1_all.deb /usr/src/fence-agents-pve_4.0.5-2_amd64.deb root@OTHERMACHINEIP:/usr/src
 
 #Installation des paquets
 
-    # dpkg -i /usr/src/python-requests_2.3.0-1_all.deb /usr/src/python-slumber_0.6.0-1_all.deb /usr/src/fence-agents-pve_4.0.5-1_amd64.deb /usr/src/python-python-hpilo_2.6.2-1_all.deb
-    # ssh root@OTHERMACHINE "dpkg -i /usr/src/python-requests_2.3.0-1_all.deb /usr/src/python-slumber_0.6.0-1_all.deb /usr/src/fence-agents-pve_4.0.5-1_amd64.deb /usr/src/python-python-hpilo_2.6.2-1_all.deb"
+    # dpkg -i /usr/src/python-requests_2.3.0-1_all.deb /usr/src/python-slumber_0.6.0-1_all.deb /usr/src/fence-agents-pve_4.0.5-2_amd64.deb /usr/src/python-python-hpilo_2.6.2-1_all.deb
+    # ssh root@OTHERMACHINE "dpkg -i /usr/src/python-requests_2.3.0-1_all.deb /usr/src/python-slumber_0.6.0-1_all.deb /usr/src/fence-agents-pve_4.0.5-2_amd64.deb /usr/src/python-python-hpilo_2.6.2-1_all.deb"
 
 #Configuration
 
