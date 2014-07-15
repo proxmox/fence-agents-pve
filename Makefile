@@ -1,8 +1,10 @@
-RELEASE=3.1
+RELEASE=3.2
+
+# GIT SOURCE: https://git.fedorahosted.org/git/fence-agents.git
 
 PACKAGE=fence-agents-pve
 PKGREL=1
-FAVER=4.0.5
+FAVER=4.0.10
 FADIR=fence-agents-${FAVER}
 FASRC=${FADIR}.tar.xz
 
@@ -23,10 +25,12 @@ ${DEB} deb: ${FASRC}
 	lintian -X copyright-file ${DEB}
 
 ${RHCSRC} download:
-	rm -rf fence-agents.git
-	git clone git://git.fedorahosted.org/fence-agents.git fence-agents.git
-	cd fence-agents.git; ./autogen.sh; ./configure; make dist
-	mv fence-agents.git/fence-agents-*.tar.gz .
+	#rm -rf fence-agents.git
+	#git clone git://git.fedorahosted.org/fence-agents.git fence-agents.git
+	#cd fence-agents.git; ./autogen.sh; ./configure; make dist
+	#mv fence-agents.git/fence-agents-*.tar.xz .
+	rm ${FASRC}
+	wget https://fedorahosted.org/releases/f/e/fence-agents/${FASRC}
 
 .PHONY: upload
 upload: ${DEB}

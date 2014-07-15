@@ -8,19 +8,16 @@ export DH_OPTIONS
 
 AGENTS= 	\
 alom		\
+amt		\
 apc		\
 apc_snmp	\
-baytech		\
 bladecenter	\
 brocade		\
-bullpap		\
 cisco_mds	\
 cisco_ucs	\
-cpint		\
 drac		\
 drac5		\
 eaton_snmp	\
-egenera		\
 eps		\
 hds_cb		\
 hpblade		\
@@ -35,17 +32,12 @@ ldom		\
 lib		\
 lpar		\
 manual		\
-mcdata		\
 netio		\
-nss_wrapper	\
-rackswitch	\
+ovh		\
 rsa		\
 rsb		\
 sanbox2		\
-scsi		\
-vixel		\
 wti		\
-xcat		\
 zvm		
 
 DESTDIR=debian/fence-agents-pve/
@@ -54,6 +46,7 @@ DESTDIR=debian/fence-agents-pve/
 	dh --with quilt $@  
 
 override_dh_auto_configure:
+	./autogen.sh
 	./configure 						\
 		--prefix=/usr 					\
 		--localstatedir=/var 				\

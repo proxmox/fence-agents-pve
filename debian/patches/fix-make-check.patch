@@ -1,0 +1,22 @@
+Index: new/make/agentccheck.mk
+===================================================================
+--- new.orig/make/agentccheck.mk	2014-07-01 13:17:00.000000000 +0200
++++ new/make/agentccheck.mk	2014-07-15 08:46:37.000000000 +0200
+@@ -1,5 +1,5 @@
+ TEMPFILE:=$(shell mktemp)
+-DATADIR:=$(abs_top_builddir)/../tests/data/metadata
++DATADIR:=$(abs_top_builddir)/tests/data/metadata
+ 
+ check: $(TARGET:%=xml-check.%) $(SYMTARGET:%=xml-check.%)
+ 
+Index: new/make/agentpycheck.mk
+===================================================================
+--- new.orig/make/agentpycheck.mk	2014-07-01 13:14:58.000000000 +0200
++++ new/make/agentpycheck.mk	2014-07-15 08:46:57.000000000 +0200
+@@ -1,5 +1,5 @@
+ TEMPFILE:=$(shell mktemp)
+-DATADIR:=$(abs_top_builddir)/../tests/data/metadata
++DATADIR:=$(abs_top_builddir)/tests/data/metadata
+ 
+ check: $(TARGET:%=xml-check.%) $(SYMTARGET:%=xml-check.%) $(TARGET:%=delay-check.%)
+ 

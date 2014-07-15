@@ -1,0 +1,13 @@
+Index: new/tests/data/metadata/fence_scsi.xml
+===================================================================
+--- new.orig/tests/data/metadata/fence_scsi.xml	2014-07-01 12:53:45.000000000 +0200
++++ new/tests/data/metadata/fence_scsi.xml	2014-07-15 09:13:29.000000000 +0200
+@@ -56,7 +56,7 @@
+ 	</parameter>
+ 	<parameter name="vgs_path" unique="0" required="0">
+ 		<getopt mixed="--vgs-path=[path]" />
+-		<content type="string" default="/usr/sbin/vgs"  />
++		<content type="string" default="/sbin/vgs"  />
+ 		<shortdesc lang="en">Path to vgs binary</shortdesc>
+ 	</parameter>
+ 	<parameter name="power_wait" unique="0" required="0">

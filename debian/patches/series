@@ -1,1 +1,2 @@
-# nothing to do
+fix-make-check.patch
+fix-vgs-path.patch

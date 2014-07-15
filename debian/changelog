@@ -1,3 +1,19 @@
+fence-agents-pve (4.0.10-1) unstable; urgency=low
+  
+  * update to 4.0.10
+
+  * add fence_ovh (depend on python-suds)
+  
+  * add fence_amt
+  
+  * remove baytech, bullpap, cpint, egenera, mcdata, nss_wrapper, 
+    rackswitch, vixel, xcat. Those agents are no longer included in 
+    upstream package.
+  
+  * remove fence_scsi (breaks cluster schema generation)
+  
+ -- Proxmox Support Team <support@proxmox.com>  Tue, 15 Jul 2014 08:41:22 +0200
+
 fence-agents-pve (4.0.5-1) unstable; urgency=low
 
   * update to 4.0.5
