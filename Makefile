@@ -1,4 +1,4 @@
-RELEASE=3.2
+RELEASE=3.3
 
 # GIT SOURCE: https://git.fedorahosted.org/git/fence-agents.git
 
