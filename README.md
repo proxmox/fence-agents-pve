@@ -1,5 +1,3 @@
-This work was done for a client who finally did not pay me one cent for it ( http://e-conception.fr ), so if you do have a chance do the same to them don't think twice about it.
-
 Installation du module 'fencing' pour online sur proxmox a partir des sources
 =============================================================================
 
