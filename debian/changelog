@@ -1,3 +1,9 @@
+fence-agents-pve (4.0.10-2) unstable; urgency=low
+
+  * add fence_pve agent (useful for testing)
+
+ -- Proxmox Support Team <support@proxmox.com>  Thu, 04 Dec 2014 12:12:59 +0100
+
 fence-agents-pve (4.0.10-1) unstable; urgency=low
   
   * update to 4.0.10
