@@ -8,8 +8,6 @@ case "$1" in
     # Configure this package.  If the package must prompt the user for
     # information, do it here.
 
-    ccs_update_schema -f
-    
     # There are three sub-cases:
     if test "${2+set}" != set; then
       # We're being installed by an ancient dpkg which doesn't remember
