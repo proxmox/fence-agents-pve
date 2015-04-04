@@ -1,3 +1,11 @@
+fence-agents-pve (4.0.16-1) unstable; urgency=medium
+
+  * update to 4.0.16
+
+  * re-add fence_scsi
+
+ -- Proxmox Support Team <support@proxmox.com>  Sat, 04 Apr 2015 10:19:38 +0200
+
 fence-agents-pve (4.0.10-2) unstable; urgency=low
 
   * add fence_pve agent (useful for testing)
