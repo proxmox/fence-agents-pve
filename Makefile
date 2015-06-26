@@ -3,7 +3,7 @@ RELEASE=4.0
 # GIT SOURCE: https://git.fedorahosted.org/git/fence-agents.git
 
 PACKAGE=fence-agents-pve
-PKGREL=1
+PKGREL=2
 FAVER=4.0.16
 FADIR=fence-agents-${FAVER}
 FASRC=${FADIR}.tar.xz
