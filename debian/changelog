@@ -1,3 +1,9 @@
+fence-agents-pve (4.0.10-3) unstable; urgency=low
+
+  * depend on either telnet or telnet-client
+
+ -- Proxmox Support Team <support@proxmox.com>  Fri, 26 Jun 2015 18:21:29 +0200
+
 fence-agents-pve (4.0.10-2) unstable; urgency=low
 
   * add fence_pve agent (useful for testing)
