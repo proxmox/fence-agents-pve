@@ -8,7 +8,7 @@ Standards-Version: 3.8.4
 Package: fence-agents-pve
 Architecture: any
 Depends: ${perl:Depends}, ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}, openipmi, sg3-utils, python-pexpect, python-pycurl,
- libnet-snmp-perl, libnet-telnet-perl, snmp, telnet, openssh-client,
- python-openssl, redhat-cluster-pve, python-suds
+ libnet-snmp-perl, libnet-telnet-perl, snmp, telnet | telnet-client, 
+ openssh-client, python-openssl, redhat-cluster-pve, python-suds
 Description: fence agents for redhat cluster suite
  This package provides various fence agents.
