@@ -1,3 +1,9 @@
+fence-agents-pve (4.0.20-1) unstable; urgency=medium
+
+  * update to 4.0.20
+
+ -- Proxmox Support Team <support@proxmox.com>  Thu, 13 Aug 2015 09:50:51 +0200
+
 fence-agents-pve (4.0.16-2) unstable; urgency=medium
 
   * depend on either telnet or telnet-client
